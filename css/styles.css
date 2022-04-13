@@ -7817,6 +7817,9 @@ textarea.form-control-lg {
 }
 .has-bg-img{
   opacity: 0.5;
+  /* object-fit: contain; */
+  background-size: cover;
+
 }
 .bg-secondary {
   --bs-bg-opacity: 1;
@@ -11306,6 +11309,7 @@ body {
 
 .page-section {
   padding: 8rem 0;
+  /* background-image: inherit; */
 }
 
 .text-white-75 {
@@ -11457,7 +11461,7 @@ header.masthead h1, header.masthead .h1 {
   text-transform: uppercase;
 }
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-sm .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-md .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-lg .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xl .portfolio-box .portfolio-box-caption .project-name, #portfolio .container-xxl .portfolio-box .portfolio-box-caption .project-name {
-  font-size: 1.2rem;
+  font-size: 1.2rem
 }
 #portfolio .container-fluid .portfolio-box:hover .portfolio-box-caption, #portfolio .container-sm .portfolio-box:hover .portfolio-box-caption, #portfolio .container-md .portfolio-box:hover .portfolio-box-caption, #portfolio .container-lg .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption, #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
@@ -11465,4 +11469,9 @@ header.masthead h1, header.masthead .h1 {
 
 #download{
   background:magenta;
+}
+
+#about{
+  background-image: url('./assets/img/animecollageimage.png');
+  background-size: 100% cover;
 }
