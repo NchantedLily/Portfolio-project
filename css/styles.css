@@ -3037,13 +3037,14 @@ textarea.form-control-lg {
 }
 .btn:disabled, .btn.disabled, fieldset:disabled .btn {
   pointer-events: none;
-  opacity: 0.65;
+  /* opacity: 0.65; */
 }
 
 .btn-primary {
   color: #fff;
   background-color:#70f828;
   border-color:#fc74ec;
+  opacity: 0;
 }
 .btn-primary:hover {
   color: #fff;
@@ -11533,3 +11534,6 @@ header.masthead h1, header.masthead .h1 {
 
 }
  
+#submitButton{
+  opacity: 1;
+}
