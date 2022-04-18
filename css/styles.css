@@ -11350,7 +11350,10 @@ body {
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75) !important;
-  font-size:20px;
+  font: size 45px;
+  font-style:italic;
+  font-weight: 700px;
+  font-stretch: extra-expanded;
 }
 
 .btn-xl {
@@ -11536,4 +11539,20 @@ header.masthead h1, header.masthead .h1 {
  
 #submitButton{
   opacity: 1;
+}
+
+#tuna{
+  font-style:italic;
+  font-weight: 600;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+#chicken{
+  font-style:italic;
+}
+
+
+#pizza{
+  font-weight:500;
 }
