@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
+
+     
         <title>Martia's Portfolio</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
@@ -19,6 +21,7 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
+        
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
@@ -65,6 +68,17 @@
                 </div>
             </div>
         </section>
+        <div class="player__controls">
+            <div class="progress">
+             <div class="progress__filled"></div>
+            </div>
+            <button class="player__button toggle" title="Toggle Play">►</button>
+            <input type="range" name="volume" class="player__slider" min="0" max="1" step="0.05" value="1">
+            <input type="range" name="playbackRate" class="player__slider" min="0.5" max="2" step="0.1" value="1">
+            <button data-skip="-10" class="player__button">« 10s</button>
+            <button data-skip="25" class="player__button">25s »</button>
+          </div>
+        </div>
         <!-- Services-->
         <section class="page-section" id="services">
             <div class="container px-4 px-lg-5">
@@ -107,29 +121,28 @@
                <div id="portfolio">
               <div class="">
               <div class="container-fluid p-0" id="hot">
-                <div class="row g-0">
+               <div class="row g-0">
                 <div class="col-lg-4 col-sm-4">
                 <a class="portfolio-box" href="aboutmeportfolioimage.jpg" title="About me" > 
                 <img class="w-100 height " id="height" src="aboutmeportfolioimage.jpg" alt="..." />
                     <div class="portfolio-box-caption">
-                    <div class="project-category text-white-50">Category</div>
+                    <div class="project-category text-white-50">Webpage</div>
                     <div class="project-name">About me</div>
                 </div>
-            </div> 
-                </a>
-
+                 </div> 
+                 </a>
+           
 
                 
                     <div class="col-lg-4 col-sm-4">
-                    <a class="portfolio-box" href="madlibsportfolioimage.jpg" title="MadLibs">
+                    <a class="portfolio-box" href="madlibsportfolioimage.jpg" title="Unlimited MadLibs">
                     <img class="w-100 height" src="madlibsportfolioimage.jpg" alt="..." />
                     <div class="portfolio-box-caption">
-                    <div class="project-category text-white-50">Category</div>
+                    <div class="project-category text-white-50">MadLibs</div>
                     <div class="project-name"> Unlimited MadLibs</div>
                       </div>
                         </a>
                     </div>
-                     
 
 
                     
@@ -137,26 +150,46 @@
                     <a class="portfolio-box" href="drumkitportfolioimage.jpg" title="Pink Pause and Play on!">
                     <img class="w-100 height" src="drumkitportfolioimage.jpg" alt="..." />
                         <div class="portfolio-box-caption">
-                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-category text-white-50">Drumkit</div>
                         <div class="project-name"> Pink Pause and Play on!</div>
                           </div>
                             </a>
                         </div>
 
                     <div class="col-lg-4 col-sm-4">
-                    <a class="portfolio-box" href="./productlandingpageportfolioimage.jpg" title="https://nchantedlily.github.io/anime-vibez/">
+                    <a class="portfolio-box" href="./videoplayerportfolioimage.jpg" title="Fairytail Video Player">
+                    <img class="w-100 height" src="./videoplayerportfolioimage.jpg" alt="..." />
+                        <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Video Player</div>
+                        <div class="project-name"> Fairytail Video Player</div>
+                          </div>
+                            </a>
+                        </div>
+
+                    <div class="col-lg-4 col-sm-4">
+                    <a class="portfolio-box" href="./flexboxgalleryportfolioimage.jpg" title="Personal Gallery">
+                    <img class="w-100 height" src="./flexboxgalleryportfolioimage.jpg" alt="..." />
+                        <div class="portfolio-box-caption">
+                        <div class="project-category text-white-50">Gallery</div>
+                        <div class="project-name">Flexbox Personal Gallery</div>
+                          </div>
+                            </a>
+                        </div>
+
+                    <div class="col-lg-4 col-sm-4">
+                    <a class="portfolio-box" href="./productlandingpageportfolioimage.jpg" title="Anime Vibez">
                     <img class="w-100 height" src="productlandingpageportfolioimage.jpg" alt="..." />
                         <div class="portfolio-box-caption">
-                        <div class="project-category text-white-50">Category</div>
+                        <div class="project-category text-white-50">Product Landing Page</div>
                         <div class="project-name">Anime Vibez</div>
                         </div>
                         </a>
                     </div>
-                    </div>
+                </div>
+                </div>
+                </div>
                 </div>
               </div>
-        </div>
-    </div>
        
         <!-- Call to action-->
         <section class="page-section  text-white" id="download">

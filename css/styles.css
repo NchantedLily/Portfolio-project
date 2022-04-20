@@ -3044,7 +3044,6 @@ textarea.form-control-lg {
   color: #fff;
   background-color:#70f828;
   border-color:#fc74ec;
-  opacity: 0;
 }
 .btn-primary:hover {
   color: #fff;
@@ -7315,7 +7314,7 @@ textarea.form-control-lg {
 .mt-0 {
   margin-top: 0 !important;
   color:white;
-  font-size:45px;
+  font-size:35px;
   
 
 }
@@ -11350,7 +11349,7 @@ body {
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75) !important;
-  font: size 45px;
+  font: size 30px;
   font-style:italic;
   font-weight: 700px;
   font-stretch: extra-expanded;
@@ -11371,7 +11370,6 @@ hr.divider {
   max-width: 3.25rem;
   margin: 1.5rem auto;
   background-color:#fc74ec;
-  opacity: 1;
 }
 
 hr.divider-light {
@@ -11545,6 +11543,7 @@ header.masthead h1, header.masthead .h1 {
   font-style:italic;
   font-weight: 600;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size:42px;
 
 }
 
