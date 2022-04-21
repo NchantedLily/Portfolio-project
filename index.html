@@ -19,6 +19,7 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
     </head>
     <body id="page-top">
         
@@ -37,25 +38,159 @@
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
+               <!-- Masthead-->
         <header class="masthead">
             <div class="container px-4 px-lg-5 h-100">
                 <div class="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
                     <div class="col-lg-8 align-self-end">
-                        <h1 class="text-white display-4" id="tuna">Martia Turner</h1>
-                        <hr class="divider"/>
-                    </div>
+                        <span class="col-lg-8 " style="height: 50px;">
+                            <style>
+                                html {
+                                  box-sizing: border-box;
+                                  background: #ffc600;
+                                  font-family: 'helvetica neue';
+                                  font-size: 20px;
+                                  font-weight: 200;
+                                }
+                                
+                                body {
+                                  margin: 0;
+                                }
+                                
+                                *, *:before, *:after {
+                                  box-sizing: inherit;
+                                }
+                            
+                                .panels {
+                                  min-height: 100vh;
+                                  overflow: hidden;
+                                  display:flex;
+                                }
+                            
+                                .panel {
+                                  background: #6B0F9C;
+                                  box-shadow: inset 0 0 0 5px rgba(255,255,255,0.1);
+                                  color: white;
+                                  text-align: center;
+                                  align-items: center;
+                                  /* Safari transitionend event.propertyName === flex */
+                                  /* Chrome + FF transitionend event.propertyName === flex-grow */
+                                  transition:
+                                    font-size 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+                                    flex 0.7s cubic-bezier(0.61,-0.19, 0.7,-0.11),
+                                    background 0.2s;
+                                  font-size: 20px;
+                                  background-size: cover;
+                                  background-position: center;
+                                  flex: 1;
+                                  justify-content: center;
+                                  align-items:center;
+                                  display: flex;
+                                  flex-direction: column;
+                                }
+                            
+                                .panel1 { background-image:url(./webdevgalleryimage.jpg); }
+                                .panel2 { background-image:url(./moneygalleryimage.jpg); }
+                                .panel3 { background-image:url(./cherryblossomsgalleryimage.jpg); }
+                                .panel4 { background-image:url(./animewallgalleryimage.jpg); }
+                                .panel5 { background-image:url(./stirfrygalleryimage.jpg); }
+                            
+                                /* Flex Children */
+                                .panel > * {
+                                  margin: 0;
+                                  width: 100%;
+                                  transition: transform 0.5s;
+                                  justify-content: center;
+                                  align-items: center;
+                                }
+                            
+                                .panel > *:first-child { transform: translateY(-100%); }
+                                .panel.open-active > *:first-child { transform: translateY(0); }
+                                .panel > *:last-child { transform: translateY(100%); }
+                                .panel.open-active > *:last-child { transform: translateY(0); }
+                            
+                                .panel p {
+                                  text-transform: uppercase;
+                                  font-family: 'Amatic SC', cursive;
+                                  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+                                  font-size: 2em;
+                                }
+                                
+                                .panel p:nth-child(2) {
+                                  font-size: 4em;
+                                }
+                            
+                                .panel.open {
+                                  flex: 5;
+                                  font-size: 40px;
+                                }
+                            
+                              </style>
+                            
+                            
+                              <div class="panels">
+                                <div class="panel panel1">
+                                  <p>Web</p>
+                                  <p>Dev</p>
+                                  <p>2022!</p>
+                                </div>
+                                <div class="panel panel2">
+                                  <p>Make</p>
+                                  <p>More</p>
+                                  <p>Money</p>
+                                </div>
+                                <div class="panel panel3">
+                                  <p>Balance</p>
+                                  <p>Peace</p>
+                                  <p>Beauty</p>
+                                </div>
+                                <div class="panel panel4">
+                                  <p>Live</p>
+                                  <p>Your</p>
+                                  <p>Passion</p>
+                                </div>
+                                <div class="panel panel5">
+                                  <p>Share</p>
+                                  <p>Love</p>
+                                  <p>Moments</p>
+                                </div>
+                              </div>
+                            
+                              <script>
+                            const panels = document.querySelectorAll('.panel');
+                            
+                            function toggleOpen() {
+                              console.log('Hello');
+                              this.classList.toggle('open');
+                            }
+                            
+                            function toggleActive(e) {
+                              console.log(e.propertyName);
+                              if (e.propertyName.includes('flex')) {
+                                this.classList.toggle('open-active');
+                              }
+                            }
+                            
+                            panels.forEach(panel => panel.addEventListener('click', toggleOpen));
+                            panels.forEach(panel => panel.addEventListener('transitionend', toggleActive));
+                              </script>
+                            <h1 class="text-white display-4" id="tuna">Martia Turner</h1>
+                                <hr class="divider"/>
+                            </span>
+                            </div>
                     <div class="col-lg-8 align-self-baseline">
-                        <p class="text-white-75 mb-5 fw-bold">Web Development Superstar ready to exceed your expectations and be part of a winning team.Strong organizational and
+                        <p class="text-white-75 mb-5 fw-bold">Web Development Superstar ready to exceed your expectations and be
+                            part of a winning team.Strong organizational and
                             communication skills with commitment to
-                            maintaining professional relationships to increase profitability and drive business results.All-around Anime Enthusiast,Gamer,Self-proclaimed Expert Chef and world class baker seeking the opportunity to join dynamic and innovative team. </p>
+                            maintaining professional relationships to increase profitability and drive business
+                            results.All-around Anime Enthusiast,Gamer,Self-proclaimed Expert Chef and world class baker seeking
+                            the opportunity to join dynamic and innovative team. </p>
                         <a class="btn btn-primary btn-xl" href="#about">Find Out More</a>
                     </div>
                 </div>
             </div>
         </header>
         <!-- About-->
-      
         <section class="page-section" id="about">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
